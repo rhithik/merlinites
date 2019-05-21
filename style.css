@@ -1,0 +1,186 @@
+html{
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: arial, helvetica, sans-serif;
+  margin: 0;
+  background: linear-gradient(yellow, orange, red);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1, h2, p{
+  text-align: center;
+}
+
+a{
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  color: rgb(253, 122, 166);
+}
+
+a.top{
+  color: blue;
+}
+
+.toggleNav{
+  display: none;
+}
+
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+input{
+  padding: 10px;
+  margin: 10px;
+  border: 0;
+  width: 200px;
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup{
+  text-align: center;
+}
+
+.facts{
+  display: flex;
+}
+
+#fact-img{
+  height: 12rem;
+  width: 15rem;
+  border-radius: 25px;
+}
+
+.fact-text{
+  font-size: 1em;
+  text-align: left;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+.calendar {
+  position: relative; 
+  padding-bottom: 75%; 
+  height: 0; 
+  overflow: hidden;
+}
+   
+.calendar iframe {
+  position: absolute; 
+  top:0; left: 0; 
+  width: 100%; 
+  height: 100%;
+}
+
+.flex-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.flex-nav li{
+  flex: 3;
+}
+
+@media all and (max-width:1000px){
+  
+  .flex-nav ul{
+    flex-direction: column;
+  }
+
+  .flex-nav li{
+    flex: 1 1 50%;
+  }
+
+  .toggleNav{
+    display: block;
+  }
+
+  .flex-nav ul{
+    display: none;
+  }
+
+    .flex-nav ul.open{
+      display: flex;
+    }
+
+}
+
+@media all and (max-width:500px) {
+
+  .flex-nav li{
+    flex-basis: 100%;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper > *{
+    order:999;
+  }
+
+  .flex-nav{
+    order:1;
+  }
+
+  .toggleNav{
+    display: block;
+  }
+
+  .flex-nav ul{
+    display: none;
+  }
+
+    .flex-nav ul.open{
+      display: flex;
+    }
+  
+  .top{
+    order: 2;
+  }
+  
+  .details{
+    order: 3;
+  }
+
+  .signup{
+    order: 4;
+  }
+
+}
