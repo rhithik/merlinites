@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Merlinites</title>
   <link rel="stylesheet" href="style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
 </head>
 <body id="top">
 
@@ -15,9 +20,9 @@
       <h1><a href="#">Descendants of Merlin</a></h1>
     </header>
 
-    <nav class="flex-nav">
+    <nav class="navbar">
       <a href="#" class="toggleNav">Menu</a>
-      <ul>
+      <ul class="flex-nav">
         <li><a href="#top">Home</a></li>
         <li><a href="#facts">Things to Know</a></li>
         <li><a href="#merchandise">Merchandise</a></li>
@@ -34,7 +39,7 @@
         <li>Has anything unexplainable happened when you were around?</li>
         <li>Do you experience deja vu on a regular basis?</li>
       </ul>
-      <p>If you answered <strong>yes</strong> to any of the above questions, sign up below to receive the Merlinite Chronicles to see what life as a Merlinite is like.</p>
+      <p>If you answered <strong>yes</strong> to any of the above questions, sign up below to <br> receive the Merlinite Chronicles to see what life as a Merlinite is like.</p>
     </section>
 
     <section class="signup">
@@ -43,6 +48,10 @@
         <input type="email" placeholder="Email Address">
         <input type="submit" value="Sign Me Up!">
       </form>
+    </section>
+
+    <section>
+      <a class="top" href="#top"><sub><strong>Top</strong></sub></a>
     </section>
 
     <h2>Things to Know</h2>
@@ -82,8 +91,8 @@
     </section>
 
     <h2>Gatherings</h2>
+
     <section id="calendar" class="calendar">
-      <h2>Gatherings</h2>
       <iframe src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cnVvOGdrb2FwcmhqMDZlNXBpMHZmZGM4OXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D81B60&amp;color=%230B8043" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
     </section>
 
@@ -115,12 +124,11 @@
 
   </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
     
     $(function() {
       $('.toggleNav').on('click',function() {
-        $('.flex-nav ul').toggleClass('open');
+        $('ul.flex-nav').toggleClass('open');
       });
     });
   </script>
