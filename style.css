@@ -112,10 +112,7 @@ ul.flex-nav {
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-li.flex-nav {
-  flex: 3;
+  justify-content: space-evenly;
 }
 
 @media all and (max-width:1000px){
@@ -157,7 +154,7 @@ li.flex-nav {
     order:999;
   }
 
-  .flex-nav{
+  .navbar{
     order:1;
   }
 
