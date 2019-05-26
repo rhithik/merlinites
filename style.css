@@ -133,7 +133,7 @@ ul.flex-nav {
     display: none;
   }
 
-  ul.flex-nav .open{
+  ul.flex-nav.open{
       display: flex;
     }
 
