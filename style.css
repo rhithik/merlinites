@@ -1,6 +1,7 @@
 html{
   box-sizing: border-box;
   font-size: 20px;
+  color: rgb(55, 56, 55);
 }
 
 *, *:before, *:after{
@@ -28,6 +29,7 @@ a{
   width: 100%;
   text-align: center;
   transition: all 0.5s;
+  border-bottom: 2px solid rgb(170, 184, 170);
 }
 
 a:visited{
