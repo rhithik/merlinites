@@ -16,13 +16,13 @@
     </header>
 
     <nav class="flex-nav">
-      <a href="#" class="toggleNav">Menu</a>
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#facts">Things to Know</a></li>
-        <li><a href="#merchandise">Merchandise</a></li>
-        <li><a href="#calendar">Gatherings</a></li>
-        <li><a href="#lessons">Lessons</a></li>
+      <a href="#" class="toggle-nav">Menu</a>
+      <ul class="flex-nav">
+        <li class="flex-nav"><a href="#top">Home</a></li>
+        <li class="flex-nav"><a href="#facts">Things to Know</a></li>
+        <li class="flex-nav"><a href="#merchandise">Merchandise</a></li>
+        <li class="flex-nav"><a href="#calendar">Gatherings</a></li>
+        <li class="flex-nav"><a href="#lessons">Lessons</a></li>
       </ul>
     </nav>
 
@@ -43,6 +43,10 @@
         <input type="email" placeholder="Email Address">
         <input type="submit" value="Sign Me Up!">
       </form>
+    </section>
+
+    <section>
+      <a class="top" href="#top"><sub><strong>Top</strong></sub></a>
     </section>
 
     <h2>Things to Know</h2>
@@ -82,9 +86,9 @@
     </section>
 
     <h2>Gatherings</h2>
-    <section id="calendar" class="calendar">
-      <h2>Gatherings</h2>
-      <iframe src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cnVvOGdrb2FwcmhqMDZlNXBpMHZmZGM4OXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D81B60&amp;color=%230B8043" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
+
+    <section id="calendar">
+      <iframe class="calendar" src="https://calendar.google.com/calendar/b/3/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=cnVvOGdrb2FwcmhqMDZlNXBpMHZmZGM4OXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D81B60&amp;color=%230B8043" style="border-width:0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
     </section>
 
     <section>
@@ -119,8 +123,8 @@
   <script>
     
     $(function() {
-      $('.toggleNav').on('click',function() {
-        $('.flex-nav ul').toggleClass('open');
+      $('.toggle-nav').on('click',function() {
+        $('ul.flex-nav').toggleClass('open');
       });
     });
   </script>
