@@ -21,6 +21,7 @@ h1, h2, p{
 }
 
 a{
+  color: rgb(55, 56, 55);
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
