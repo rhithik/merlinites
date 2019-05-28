@@ -1,7 +1,7 @@
 html{
   box-sizing: border-box;
   font-size: 20px;
-  color: rgb(55, 56, 55);
+  color: rgb(226, 235, 226);
 }
 
 *, *:before, *:after{
@@ -11,9 +11,8 @@ html{
 body{
   font-family: arial, helvetica, sans-serif;
   margin: 0;
-  background: linear-gradient(yellow, orange, red);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #374f69;
+  background-image: url(asfalt-light.png)
 }
 
 h1, h2, p{
@@ -21,7 +20,7 @@ h1, h2, p{
 }
 
 a{
-  color: rgb(55, 56, 55);
+  color: rgb(226, 235, 226);
   font-weight: 100;
   letter-spacing: 2px;
   text-decoration: none;
@@ -30,19 +29,15 @@ a{
   width: 100%;
   text-align: center;
   transition: all 0.5s;
-  border-bottom: 2px solid rgb(55, 56, 55);
+  border-bottom: 2px solid rgb(226, 235, 226);
 }
 
 a:visited{
-  color: rgb(55, 56, 55);
+  color: rgb(226, 235, 226);
 }
 
 a:hover{
   color: rgb(253, 122, 166);
-}
-
-a.top{
-  color: blue;
 }
 
 .toggleNav{
