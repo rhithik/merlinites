@@ -2,6 +2,7 @@ html{
   box-sizing: border-box;
   font-size: 20px;
   color: rgb(226, 235, 226);
+  padding: 2%;
 }
 
 *, *:before, *:after{
@@ -68,6 +69,7 @@ input{
 
 .facts{
   display: flex;
+  justify-content: center;
 }
 
 #fact-img{
@@ -79,6 +81,7 @@ input{
 .fact-text{
   font-size: 1em;
   text-align: left;
+  width: 40%;
 }
 
 footer{
@@ -115,6 +118,10 @@ ul.flex-nav {
 
 @media all and (max-width:1000px){
   
+  .fact-text{
+    width: 40%;
+  }
+
   ul.flex-nav {
     flex-direction: column;
   }
@@ -138,6 +145,10 @@ ul.flex-nav {
 }
 
 @media all and (max-width:500px) {
+
+  .fact-text{
+    width: 90%;
+  }
 
   li.flex-nav {
     flex-basis: 100%;
