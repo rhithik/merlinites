@@ -50,6 +50,7 @@ a:hover {
 }
 
 .wrapper {
+  width: 85%; /* We set a width for narrow screens */
   max-width: 1000px;
   margin: 0 auto;
 }
